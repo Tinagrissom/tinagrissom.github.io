@@ -10,6 +10,8 @@ $(() => {
 
   }).then(
     (data) => {
+
+      $('.definition').empty();
       const $class = $('<p>').appendTo('.definition').html(data[0].fl)
 
       const define = () => {
