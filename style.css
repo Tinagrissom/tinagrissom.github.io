@@ -1,3 +1,34 @@
 *{
-  border: 1px solid gold
+  /* border: 1px solid gold; */
+}
+body{
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("https://www.researchgate.net/profile/Dara_Tafazoli/publication/273766711/figure/fig1/AS:669383022092291@1536604757194/The-paper-abstract-is-converted-by-the-author-into-word-cloud-by-Wordlenet.ppm")
+}
+#modal{
+	/* background-color: ; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+  display: none;
+  overflow: auto;
+}
+#modal-textbox{
+  background-color: #F29591;
+  height: 350px;
+  width: 550px;
+  margin: 150px auto;
+  border-radius: 1em;
+  padding: 2%;
+}
+
+#openModal{
+  font-size: 40px;
+}
+#input{
+  font-size: 40px;
 }
