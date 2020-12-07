@@ -1,26 +1,28 @@
-*{
-  /* border: 1px solid gold; */
-}
+
 body{
+  display: flex;
   background-attachment: fixed;
   background-position: center;
-  /* background-image: url("https://www.researchgate.net/profile/Dara_Tafazoli/publication/273766711/figure/fig1/AS:669383022092291@1536604757194/The-paper-abstract-is-converted-by-the-author-into-word-cloud-by-Wordlenet.ppm") */
-  background-image: url("https://ww2.kqed.org/app/uploads/sites/43/2019/12/many-old-books-stacked-in-texture-picture-id1074590734-1020x574.jpg")
+  background-image: url("https://ww2.kqed.org/app/uploads/sites/43/2019/12/many-old-books-stacked-in-texture-picture-id1074590734-1020x574.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 100px;
+  justify-content: center;
 }
 
 .search-box{
-  margin: 25%;
+  margin: 20% 26%;
   display: inline-flex;
-  background: rgba(201, 76, 76, 0.7);
+  background: rgba(150, 201, 170, 0.7);
   padding: 20px;
   border-radius: .5em;
 }
 #input{
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #modal{
-	background-color: rgba(201, 76, 76, 0.3);
+	background-color: rgba(156, 203, 247, 0.3);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -31,7 +33,7 @@ body{
   overflow: auto;
 }
 #modal-textbox{
-  background-color: rgba(201, 76, 76);
+  background-color: rgba(156, 203, 247);
   height: auto;
   width: 550px;
   margin: 150px auto;
@@ -43,7 +45,40 @@ body{
   line-height: 120%;
   text-align: right;
 }
+#close{
+  margin-left: 85%;
+}
 
 #openModal{
   font-size: 40px;
+}
+@media (max-width: 600px) {
+  body{
+    background-repeat: repeat-y;
+    background-size: auto;
+    background-image: url("https://ww2.kqed.org/app/uploads/sites/43/2019/12/many-old-books-stacked-in-texture-picture-id1074590734-1020x574.jpg");
+    /* background: rgba(150, 201, 170, 0.7); */
+    margin-top: 300px;
+  }
+  #modal{
+    background: rgba(150, 201, 170, 0.3)
+  }
+  #input{
+    font-size: 1em
+  }
+  #openModal{
+    font-size: 1em;
+    margin: 0 auto;
+  }
+  .search-box{
+    font-size: 1em;
+    margin: 0 5%;
+    width: auto;
+  }
+  #modal-textbox{
+    width: 250px;
+  }
+  #close{
+    margin-left: 80%
+  }
 }
