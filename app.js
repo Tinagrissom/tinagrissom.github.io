@@ -5,19 +5,18 @@ $(() => {
 
   const $modal = $("#modal");
 
-  const $closeBtn = $("#close");
+  const $closeBtn = $("#close").css("border-radius", "5px").css("margin-left", "85%").css("font-size", "15px").css("padding", ".5em");
 
   const openModal = () => {
     $modal.css("display", "block");
   }
 
-  $openBtn.on("click", openModal);
+  $openBtn.css("cursor", "pointer").on("click", openModal);
 
   const closeModal = () => {
-    $modal.css("display", "none")
+    $modal.css("display", "none");
   }
 
-  $closeBtn.on("click", closeModal);
 
   $('form').on('submit', (event) => {
     event.preventDefault();
@@ -37,7 +36,7 @@ $(() => {
       const $class = $('<p>').css("font-family", "sans-serif").appendTo('#modal-textbox').html(data[0].fl)
 
       const define = () => {
-        for(let i = 0; i < 3; i++){
+        for(let i = 0; i < 2; i++){
           console.log(data[i].shortdef);
 
           const $p = $('<p>')
@@ -48,6 +47,9 @@ $(() => {
         }
       }
       define()
+      $('#modal-textbox').append($closeBtn).css("padding", "20px")
+      $closeBtn.on("click", closeModal);
+
     })
 
 

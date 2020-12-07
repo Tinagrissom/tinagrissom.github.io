@@ -4,10 +4,23 @@
 body{
   background-attachment: fixed;
   background-position: center;
-  background-image: url("https://www.researchgate.net/profile/Dara_Tafazoli/publication/273766711/figure/fig1/AS:669383022092291@1536604757194/The-paper-abstract-is-converted-by-the-author-into-word-cloud-by-Wordlenet.ppm")
+  /* background-image: url("https://www.researchgate.net/profile/Dara_Tafazoli/publication/273766711/figure/fig1/AS:669383022092291@1536604757194/The-paper-abstract-is-converted-by-the-author-into-word-cloud-by-Wordlenet.ppm") */
+  background-image: url("https://ww2.kqed.org/app/uploads/sites/43/2019/12/many-old-books-stacked-in-texture-picture-id1074590734-1020x574.jpg")
 }
+
+.search-box{
+  margin: 25%;
+  display: inline-flex;
+  background: rgba(201, 76, 76, 0.7);
+  padding: 20px;
+  border-radius: .5em;
+}
+#input{
+  font-size: 30px;
+}
+
 #modal{
-	/* background-color: ; */
+	background-color: rgba(201, 76, 76, 0.3);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -18,17 +31,19 @@ body{
   overflow: auto;
 }
 #modal-textbox{
-  background-color: #F29591;
-  height: 350px;
+  background-color: rgba(201, 76, 76);
+  height: auto;
   width: 550px;
   margin: 150px auto;
   border-radius: 1em;
   padding: 2%;
 }
+#modal-footer{
+  padding: 2%;
+  line-height: 120%;
+  text-align: right;
+}
 
 #openModal{
-  font-size: 40px;
-}
-#input{
   font-size: 40px;
 }

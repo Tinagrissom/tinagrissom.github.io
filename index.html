@@ -5,20 +5,21 @@
     <title></title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8""></script>
     <script src="app.js" charset="utf-8"></script>
+    <script src="app2.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form>
+    <form class="search-box">
       <input type="text" id="input" placeholder="type word here">
-      <input type="submit" id="openModal" value="Look it up">
+      <input type="submit" id="openModal" value="Look it Up">
     </form>
     <div id="modal">
       <div id="modal-textbox">
 
+          <button type="button" id="close">Close</button>
+
       </div>
-      <div id="modal-footer">
-        <button type="button" id="close">Close</button>
-      </div>
+
     </div>
   </body>
 </html>
