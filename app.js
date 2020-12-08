@@ -76,8 +76,7 @@ $(() => {
                   .appendTo('#modal-textbox')
                   .html("🔍  " + data[i].shortdef);
         }
-
-
+        
       }
       const $imglink = $('<a>')
                     .text("📸 Images: " + userInput)
