@@ -12,4 +12,4 @@ I used a modal box to display the definitions, and created a for loop that would
 
 The modal box will also display the class of word being searched and a link that will open in a separate page to an image search of the user input.
 
-A close button will allow the user to close the modal and view the search box for a new word search. 
+A close button will allow the user to close the modal and view the search box for a new word search.
