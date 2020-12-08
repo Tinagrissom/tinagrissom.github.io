@@ -1,6 +1,9 @@
-
+*{
+  /* border: 1px solid gold */
+}
 body{
   display: flex;
+  /* flex-direction: column; */
   background-attachment: fixed;
   background-position: center;
   background-image: url("https://ww2.kqed.org/app/uploads/sites/43/2019/12/many-old-books-stacked-in-texture-picture-id1074590734-1020x574.jpg");
@@ -10,12 +13,25 @@ body{
   justify-content: center;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.container{
+  display: flex;
+  margin-left: 0 auto;
+}
+
 .search-box{
   margin: 20% 26%;
+  /* width: auto; */
   display: inline-flex;
   background: rgba(150, 201, 170, 0.7);
   padding: 20px;
   border-radius: .5em;
+  /* overflow: auto; */
 }
 #input{
   font-size: 25px;
@@ -50,7 +66,7 @@ body{
 }
 
 #openModal{
-  font-size: 40px;
+  font-size: 25px;
 }
 @media (max-width: 600px) {
   body{

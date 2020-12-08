@@ -60,13 +60,14 @@ $(() => {
       //created a p tag to display the class of word being defined - ex: noun, verb, etc
       const $class = $('<p>')
                   .css("font-family", "sans-serif")
+                  .css("font-size", "18px")
                   .appendTo('#modal-textbox')
                   .html(data[0].fl)
 
       //created a function with a for loop to populate up to 2 definitions
       const define = () => {
         for(let i = 0; i < 2; i++){
-          console.log(data[i].shortdef);
+          console.log(data);
 
           //p tag for those definitions and some styling
           const $p = $('<p>')
@@ -75,11 +76,21 @@ $(() => {
                   .appendTo('#modal-textbox')
                   .html("🔍  " + data[i].shortdef);
         }
+
+
       }
+      const $imglink = $('<a>')
+                    .text("📸 Images: " + userInput)
+                    .attr("href", `https://www.pexels.com/search/${userInput}/`)
+                    .attr("target", "_blank")
+                    .css("font-size", "20px")
+                    .css("cursor", "pointer")
+
       //calling my define function
       define()
       //appending the close button to my modal and adding styling
       $('#modal-textbox')
+                  .append($imglink)
                   .append($closeBtn)
                   .css("padding", "20px")
 
