@@ -88,7 +88,7 @@ a{
   }
   .search-box{
     font-size: 1em;
-    margin: 0 5%;
+    margin: 0 auto;
     width: auto;
   }
   #modal-textbox{
