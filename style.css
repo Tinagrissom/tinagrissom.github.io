@@ -12,6 +12,10 @@ body{
   margin-top: 100px;
   justify-content: center;
 }
+img{
+  z-index: -900;
+  position: absolute;
+}
 
 a{
   text-decoration: none;
